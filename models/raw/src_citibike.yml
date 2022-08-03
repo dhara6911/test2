@@ -7,3 +7,4 @@ sources:
     tables: 
       - name: tripinfo
       - name: JSON_WEATHER_DATA_VIEW
+     
