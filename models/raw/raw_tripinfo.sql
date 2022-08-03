@@ -4,4 +4,4 @@
     )
 }}
 select * from
-RAW.CITIBIKESCHEMA.TRIPINFO
+{{ source('citibike', 'tripinfo') }}

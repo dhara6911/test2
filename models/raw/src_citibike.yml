@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: citibike
+    database: raw
+    schema: citibikeschema
+    tables: 
+      - name: tripinfo
+      - name: JSON_WEATHER_DATA_VIEW

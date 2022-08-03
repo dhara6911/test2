@@ -4,4 +4,4 @@
     )
 }}
 select * from
-RAW.CITIBIKESCHEMA.JSON_WEATHER_DATA_VIEW
+{{ source('citibike', 'JSON_WEATHER_DATA_VIEW') }}
