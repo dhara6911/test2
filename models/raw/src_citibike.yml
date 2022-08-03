@@ -2,9 +2,12 @@ version: 2
 
 sources:
   - name: citibike
+    description: a clone of the Snowflake database
     database: raw
     schema: citibikeschema
     tables: 
       - name: tripinfo
+        description: raw trip information table
       - name: JSON_WEATHER_DATA_VIEW
+        description: raw weather data for New York City
      
