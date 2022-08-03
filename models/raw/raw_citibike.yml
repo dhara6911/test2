@@ -6,3 +6,23 @@ models:
       - name: tripduration
         tests: 
           - not_null
+
+  - name: raw_weather
+    columns:
+      - name: weather_desc
+        tests:
+          - not null
+      - name: weather
+        tests:
+          - accepted_values: 
+              values:
+              - 'Smoke'
+              - 'Haze'
+              - 'Drizzle'
+              - 'Thunderstorm'
+              - 'Fog'
+              - 'Mist'
+              - 'Snow'
+              - 'Rain'
+              - 'Clouds'
+              - 'Clear'
