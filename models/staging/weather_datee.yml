@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: weather_date
+    description: gives weather condition for each day of bike ride.
+    columns: 
+      - name: tripduration
+        description: total tripduration for that particular day
+      - name: weather
+        description: describes the weather condition for that day
