@@ -1,6 +1,8 @@
 select
-t.tripduration,
 t.starttime,
-w.weather
+t.tripduration,
+w.weather,
+w.observation_time
 from {{ref('raw_tripinfo')}} as t
-left join {{ ref ('raw_weather')}} as w
+ join {{ ref ('raw_weather')}} as w
+on t.starttime = w.observation_time
